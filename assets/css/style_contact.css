@@ -1,0 +1,129 @@
+/* Couleur */
+html{
+  --text-font-family: 'Goldman', cursive;
+  --main-bg-color : rgba(29, 93, 231, 0.76);
+  --texte-title-color :rgb(0, 247, 255);
+  --title-font-family: 'Passion One', cursive, sans-serif;  
+  --title-color : rgb(0, 247, 255);
+  --color-hover :#00f7ff;
+  --texte-color :  rgba(29, 93, 231, 0.76);
+  --bg-color : rgba(0, 31, 51);
+}
+
+
+
+/* ====================================================== */
+/* ======================/* Formulaire ================== */
+/* ====================================================== */
+
+h4{
+  text-align: center;
+  font-family: var(--title-font-family);
+  color: var(--title-color);
+  font-size: 40px;
+}
+
+
+.icon--contact{
+  margin: 12px auto 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulaire{
+  margin: 2% auto;
+  border: 1px var(--color-hover) outset;
+  box-shadow: 0 0 20px var(--color-hover);
+  padding: 1%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+ 
+
+.form--on {
+  display: block;
+  animation: .3s 0s 1 pop;
+}
+
+
+
+.posts {
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+}
+  
+
+
+
+.form_lastname, 
+.form_firstname, 
+.form_email, 
+.form_message {
+  font-weight: bold;
+  color: var(--texte-color);
+  text-shadow: var(--color-hover) 1px 0 3px;
+  font-size: 2em;
+  font-family: 'Goldman', cursive;
+  padding: 0.5em;
+
+}
+  
+.form__contact{
+  display: flex;
+  border: none;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#lastname, #firstname, #email {
+  width: 80%;
+  background-color: var(--bg-color);   
+  box-shadow: 3px 3px 3px 3px var(--color-hover); 
+  color: white;
+}
+
+
+
+#message{
+  background-color: rgba(0, 31, 51);   
+  box-shadow: 3px 3px 3px 3px var(--color-hover); 
+  color: white;
+  width: 50rem;
+  height: 20rem;
+}
+  
+button {
+  padding: 0.5em;
+  background-color: var(--color-hover);
+  color: var(--bg-color); 
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  margin: 10px;
+}
+  
+  
+.alert {
+  color: black;
+  background-color: red;
+  padding: 0.4rem;
+}
+  
+.form_message {
+  line-height: 3em;
+}
+  
+#signature {
+  font-size: larger;
+}
+
+
+/* bas de page */
+
+
