@@ -1,0 +1,67 @@
+@media screen and (max-width: 900px) {
+    nav {
+        position: absolute;
+        top: 60%;
+        left: 0%;
+        font-size: smaller;
+        font-weight: bold;
+        margin-left: 33%;
+    }
+    header {
+        color: white;
+        text-align: center; 
+        margin: auto; 
+    }
+
+    .entete {
+        background-image: url(../pictures/digital_global_connection_network.jpg);
+        height: 30em;
+    }
+
+    .entete h1{
+        display: none;
+    }
+
+    .entete h2{
+        position: absolute;
+        top: 190px;
+        left: 0%;
+    }
+    
+    /* Titre  */
+    h1{
+        font-size: 40px;
+    }
+    
+    
+    
+    h2{
+        font-size: 40px;
+    }
+
+
+    .bienvenu{
+        padding: 2%;
+    }
+
+    .projets__card{
+        width: 90%;
+        
+    }
+
+    .projets{
+        margin-bottom: 2%;
+    }
+
+
+
+    
+    .contact{
+        width: 90%;
+        margin: auto;
+    }
+
+    footer{
+        padding: 3%;
+    }
+}

@@ -14,6 +14,7 @@ header {
   color: white;
   text-align: center; 
   margin: auto; 
+
 }
 
 .entete {
@@ -21,7 +22,17 @@ header {
   height: 50em;
 }
 
+.entete h1{
+  position: absolute;
+  top: 0;
+  left: 33%;
+}
 
+.entete h2{
+  position: absolute;
+  top: 190px;
+  left: 33%;
+}
 
 /* Titre  */
 h1{
@@ -41,7 +52,6 @@ h2{
   font-size: 56px;
   font-family: 'Goldman', cursive;
   font-weight: bold;
-  max-width: 110em;
   text-shadow: var(--color-hover) 1px 0 10px;
 }
 
@@ -250,7 +260,6 @@ footer {
   text-align: center;
   color: var(--texte-title-color);
   padding: 1%;
-  max-width: 110em;
 }
 
 
