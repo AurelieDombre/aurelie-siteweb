@@ -2,25 +2,22 @@
 html{
   --text-font-family: 'Goldman', cursive, sans-serif;
   --title-font-family: 'Passion One', cursive, sans-serif; 
-  --title-color : rgb(148, 96, 88);
-  --color-hover :rgb(0, 174, 255);
-  --texte-color :  black;
-  --font-color : black;
-  --bg-color : rgb(150, 201, 235); 
-  --bg-color-card-skills : rgba(8, 128, 207, 0.664);
-  --bg-section : rgba(0, 0, 0, 0.815);
+  --title-color : rgb(96, 87, 215);
+  --color-hover :rgb(255, 232, 139);
+  --texte-color : rgb(143, 237, 247);
+  --bg-color :rgb(202, 227, 255); 
+  --bg-color-card-skills : rgb(254, 137, 146);
 }
 
 
 header {
-  color: white;
   text-align: center; 
   margin: auto; 
 
 }
 
 .entete {
-  height: 50em;
+  height: 40em;
 }
 
 .parallax-entete{
@@ -39,24 +36,17 @@ header {
 
 .entete h1{
   position: absolute;
-  top: 0;
-  left: 40%;
-}
-
-.entete h2{
-  position: absolute;
-  top: 190px;
-  left: 33%;
-}
-
-/* Titre  */
-h1{
+  top: 200px;
+  left: 30%;
   padding: 0.5em;
   color: var(--title-color);
+  background-color:rgba(107, 241, 205, 0.582);
   font-size: 45px;
   font-family: 'Goldman', cursive;
 }
 
+
+/* Titre  */
 
 
 h2{
@@ -93,45 +83,13 @@ body {
   color: black;
 }
 
-/* nav {
-  position: sticky;
-  top: 0;
-  right: 85%;
-  font-size: 15px;
-  font-weight: bold;
-  width: 10%;
-  display: inline-flex;
-} */
+nav  a, li{
+  color: white;
+} 
 
- /* Style the links inside the navigation bar */
-/* nav a{
-  padding: 1em;
-  margin: 1%;
-  text-decoration: none;
-  color: var(--title-color);
-  
-} */
-
-/* nav a:hover {
-  box-shadow: 3px 3px 3px 3px var(--color-hover);  
-} */
-
-/* .icon{
-  width: 20px; 
-	height: 20px; 
-  text-align: center;
-	overflow: hidden;
-	margin: 0 auto 10px;
+li:hover {
+  color: rgb(107, 241, 206);
 }
-
-.icon img{
-  color: var(--title-color);
-  width: 100%;
-}
-
-.name{
-  color: var(--title-color);
-} */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*             BIENVENUE
@@ -165,19 +123,20 @@ body {
 
 .competences h5{
   text-transform: uppercase;
-  color: #fff;
+  color: var(  --title-color);
   text-align: center;
   position: relative;
   font-size: 17px;
+  font-weight: bold;
   padding: 10px;
-  background: rgba(0, 247, 255, 0.616);
+  background: rgb(255, 232, 139);
 
 }
 
 .competence_techno-card,
 .competence_framework-card,
 .competence_cms-card{
-  background-color: var(--bg-color-card-skills) ;
+  background-color:  rgba(200, 225, 255, 0.664);
   border: 1px solid var(--color-hover);
   margin: 2%;
   width: 33%;
@@ -265,7 +224,6 @@ body {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .parallax-projet{
-  /* background-image: url(../pictures/web.jpg) ; */
   background-attachment:fixed;
   background-position:center;
   background-repeat:no-repeat;
@@ -283,7 +241,7 @@ body {
   flex-direction: column;
   align-items: center;
   position:relative;
-  background: rgba(56, 136, 240, 0.89);
+  background: rgba(96, 87, 215, 0.582);
 }
 
 
@@ -306,7 +264,7 @@ body {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*              Images styles
+/*              Images projet styles
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .hovereffect {
@@ -324,7 +282,7 @@ body {
   overflow: hidden;
   top: 0;
   left: 0;
-  background-color: rgba(11, 61, 77, 0.7);
+  background-color: rgba(202, 227, 255, 0.685);
   -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
   transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
 }
@@ -340,12 +298,12 @@ body {
 
 .hovereffect h5 {
   text-transform: uppercase;
-  color: #fff;
+  color: var(  --title-color);
   text-align: center;
   position: relative;
   font-size: 17px;
   padding: 10px;
-  background: rgba(0, 247, 255, 0.616);
+  background: rgb(255, 232, 139);
   -webkit-transform: translateY(45px);
   -ms-transform: translateY(45px);
   transform: translateY(45px);
@@ -397,7 +355,6 @@ body {
 
 .contact {
   background-image: url(../pictures/contact.jpg) ;
-  /* background-color: black; */
   text-align: center;  
   border: 1px var(--color-hover) outset;
   padding: 1%;
@@ -408,6 +365,12 @@ body {
   background-size:cover;
 }
 
+.contact-conteneur{
+  background-color:rgba(107, 241, 205, 0.582);
+  position: relative;
+  top: 25%;
+
+}
 
 .contact a{
   text-decoration: none;
