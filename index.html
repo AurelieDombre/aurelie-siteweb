@@ -56,10 +56,11 @@
         </div>
     </nav>
     <header>
-        <div class="entete">
-            <h2> Développeuse Web</h2>
+        <div class="parallax-entete">
+            <div class="entete">
+                <h2>Développeuse Web</h2>
+            </div>
         </div>
-
     </header>
     <div class="corp">
 
@@ -71,63 +72,65 @@
             </section>
 
             <section id="competences" class="competences">
-                <h3>Compétences</h3>
-                <div class="competences_conteneur">
-                    <div class="competence_techno-card">
-                        <h5>Technologies</h5>
-                        <div class="techno-card-display back">
-                            <div class="competence_droite">
-                                <div class="competence-HTML">
-                                    <img class="competence-Area-HTML " src="assets/pictures/HTML5.png"
-                                        alt="logo html 5">
-                                    <p class="competence-name ">HTML5</p>
+                <div class="parallax-entete">
+                    <h3>Compétences</h3>
+                    <div class="competences_conteneur">
+                        <div class="competence_techno-card">
+                            <h5>Technologies</h5>
+                            <div class="techno-card-display back">
+                                <div class="competence_droite">
+                                    <div class="competence-HTML">
+                                        <img class="competence-Area-HTML " src="assets/pictures/HTML5.png"
+                                            alt="logo html 5">
+                                        <p class="competence-name ">HTML5</p>
+                                    </div>
+                                    <div class="competence-CSS">
+                                        <img class="competence-Area-CSS " src="assets/pictures/CSS3.png" alt="logo CSS 3">
+                                        <p class="competence-name ">CSS3</p>
+                                        <div class="competence-JS">
+                                            <img class="competence-Area-JS " src="assets/pictures/JS.png"
+                                                alt="logo JAVASCRIPT">
+                                            <p class="competence-name ">JAVASCRIPT</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="competence-CSS">
-                                    <img class="competence-Area-CSS " src="assets/pictures/CSS3.png" alt="logo CSS 3">
-                                    <p class="competence-name ">CSS3</p>
-                                    <div class="competence-JS">
-                                        <img class="competence-Area-JS " src="assets/pictures/JS.png"
-                                            alt="logo JAVASCRIPT">
-                                        <p class="competence-name ">JAVASCRIPT</p>
+                                <div class="competence_gauche">
+                                    <div class="competence-PHP">
+                                        <img class="competence-Area-PHP " src="assets/pictures/PHP.png" alt="logo php">
+                                        <p class="competence-name ">PHP/POO</p>
+                                    </div>
+                                    <div class="competence-SQL">
+                                        <img class="competence-Area-SQL " src="assets/pictures/SQL.png" alt="logo mysql">
+                                        <p class="competence-name ">MySQL</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="competence_gauche">
-                                <div class="competence-PHP">
-                                    <img class="competence-Area-PHP " src="assets/pictures/PHP.png" alt="logo php">
-                                    <p class="competence-name ">PHP/POO</p>
+                        </div>
+
+                        <div class="competence_framework-card">
+                            <h5>Framework</h5>
+                            <div class="framework-card-display">
+                                <div class="competence-SYMFO">
+                                    <img class="competence-Area-SYMFO " src="assets/pictures/SYMFONY.png"
+                                        alt="logo symfony">
+                                    <p class="competence-name ">SYMFONY</p>
                                 </div>
-                                <div class="competence-SQL">
-                                    <img class="competence-Area-SQL " src="assets/pictures/SQL.png" alt="logo mysql">
-                                    <p class="competence-name ">MySQL</p>
+                                <div class="competence-LARAVEL">
+                                    <img class="competence-Area-LARAVEL " src="assets/pictures/LARAVEL.png"
+                                        alt="logo LARAVEL by ICON MAFIA">
+                                    <p class="competence-name ">LARAVEL</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="competence_framework-card">
-                        <h5>Framework</h5>
-                        <div class="framework-card-display">
-                            <div class="competence-SYMFO">
-                                <img class="competence-Area-SYMFO " src="assets/pictures/SYMFONY.png"
-                                    alt="logo symfony">
-                                <p class="competence-name ">SYMFONY</p>
-                            </div>
-                            <div class="competence-LARAVEL">
-                                <img class="competence-Area-LARAVEL " src="assets/pictures/LARAVEL.png"
-                                    alt="logo LARAVEL by ICON MAFIA">
-                                <p class="competence-name ">LARAVEL</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="competence_cms-card">
-                        <h5>CMS</h5>
-                        <div class="cms-card-display">
-                            <div class="competence-WORDPRESS">
-                                <img class="competence-Area-WORDPRESS " src="assets/pictures/WORDPRESS.png"
-                                    alt="logo wordpress by Jagathish Saravanan">
-                                <p class="competence-name ">WORDPRESS</p>
+                        <div class="competence_cms-card">
+                            <h5>CMS</h5>
+                            <div class="cms-card-display">
+                                <div class="competence-WORDPRESS">
+                                    <img class="competence-Area-WORDPRESS " src="assets/pictures/WORDPRESS.png"
+                                        alt="logo wordpress by Jagathish Saravanan">
+                                    <p class="competence-name ">WORDPRESS</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -165,11 +168,13 @@
 
 
             <section id="contact" class="contact" title="contact">
-                <h3>CONTACT</h3>
-                <p> Pour plus d'information, je suis disponible par e-mail à l'adresse suivante : <a
-                        href="mailto:au.dombre@gmail.com"> <b>au.dombre@gmail.com</b> </a> <br>
-                    ou par téléphone au : <a href="tel:+330786804399"> <b>07.86.80.43.99</b> </a> </p>
-            </section>
+                    <div class="parallax-contact">
+                        <h3>CONTACT</h3>
+                        <p> Pour plus d'information, je suis disponible par e-mail à l'adresse suivante : <a
+                                href="mailto:au.dombre@gmail.com"> <b>au.dombre@gmail.com</b> </a> <br>
+                            ou par téléphone au : <a href="tel:+330786804399"> <b>07.86.80.43.99</b> </a> </p>
+                    </div>
+                </section>
         </div>
 
     </div>

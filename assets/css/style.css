@@ -20,8 +20,21 @@ header {
 }
 
 .entete {
-  background-image: url(../pictures/digital_global_connection_network.jpg);
   height: 50em;
+}
+
+.parallax-entete{
+  background-image: url(../pictures/responsive-color.jpg); 
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+  width: 100%;
+
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
 }
 
 .entete h1{
@@ -133,9 +146,21 @@ body {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .competences{
-  background-image: url(../pictures/mobile_desktop_computer.jpg);
   background-repeat: no-repeat;
-  height: 95vh;
+}
+
+.parallax-competences{
+  
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+  width: 100%;
+
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
 }
 
 .competences h5{
@@ -240,12 +265,12 @@ body {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .parallax-projet{
-  background-image: url(../pictures/mobile_desktop_computer.jpg) ;
+  /* background-image: url(../pictures/web.jpg) ; */
   background-attachment:fixed;
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
-  /* opacity: 40% black; */
+
   width: 100%;
 
   display: flex; 
@@ -258,7 +283,7 @@ body {
   flex-direction: column;
   align-items: center;
   position:relative;
-  /* background-color: rgba(56, 136, 240, 0.89); */
+  background: rgba(56, 136, 240, 0.89);
 }
 
 
@@ -371,11 +396,18 @@ body {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .contact {
+  background-image: url(../pictures/contact.jpg) ;
+  /* background-color: black; */
   text-align: center;  
   border: 1px var(--color-hover) outset;
   padding: 1%;
-  
+  height: 35rem;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
 }
+
 
 .contact a{
   text-decoration: none;
