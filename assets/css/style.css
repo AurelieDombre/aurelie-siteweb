@@ -2,12 +2,13 @@
 html{
   --text-font-family: 'Goldman', cursive, sans-serif;
   --title-font-family: 'Passion One', cursive, sans-serif; 
-  --title-color : rgb(0, 247, 255);
-  --color-hover :rgb(0, 247, 255);
-  --texte-color :  rgba(29, 93, 231, 0.76);
-  --font-color :rgb(195, 233, 233);
-  --bg-color : rgba(0, 31, 51); 
-  --bg-color-card-skills : rgba(0, 31, 51, 0.664);
+  --title-color : rgb(148, 96, 88);
+  --color-hover :rgb(0, 174, 255);
+  --texte-color :  black;
+  --font-color : black;
+  --bg-color : rgb(150, 201, 235); 
+  --bg-color-card-skills : rgba(8, 128, 207, 0.664);
+  --bg-section : rgba(0, 0, 0, 0.815);
 }
 
 
@@ -38,10 +39,9 @@ header {
 /* Titre  */
 h1{
   padding: 0.5em;
-  color: var(--texte-color );
+  color: var(--title-color);
   font-size: 45px;
   font-family: 'Goldman', cursive;
-  text-shadow: var(--title-color) 1px 0 10px;
 }
 
 
@@ -49,11 +49,10 @@ h1{
 h2{
   margin: 10px;
   padding: 0.3em;
-  color: var(--texte-color );
+  color: var(--title-color );
   font-size: 56px;
   font-family: 'Goldman', cursive;
   font-weight: bold;
-  text-shadow: var(--color-hover) 1px 0 10px;
 }
 
 
@@ -68,21 +67,20 @@ h3 {
 }
 
 
-.corp {
-  background: var(--bg-color)   ;   
+.corp { 
   color: var(--font-color);
   font-size: 25px;
+  
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color:rgba(0, 31, 51);
   text-align: center;
   font-size: 16px;
-  color: white;
+  color: black;
 }
 
-nav {
+/* nav {
   position: sticky;
   top: 0;
   right: 85%;
@@ -90,25 +88,25 @@ nav {
   font-weight: bold;
   width: 10%;
   display: inline-flex;
-}
+} */
 
  /* Style the links inside the navigation bar */
-nav a{
+/* nav a{
   padding: 1em;
   margin: 1%;
   text-decoration: none;
   color: var(--title-color);
   
-}
+} */
 
-nav a:hover {
+/* nav a:hover {
   box-shadow: 3px 3px 3px 3px var(--color-hover);  
-}
+} */
 
-.icon{
-  width: 40px; /* changing the width of the icon */
-	height: 40px; /* changing the height of the icon */
-	text-align: center;
+/* .icon{
+  width: 20px; 
+	height: 20px; 
+  text-align: center;
 	overflow: hidden;
 	margin: 0 auto 10px;
 }
@@ -120,7 +118,7 @@ nav a:hover {
 
 .name{
   color: var(--title-color);
-}
+} */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*             BIENVENUE
@@ -156,15 +154,12 @@ nav a:hover {
 .competence_cms-card{
   background-color: var(--bg-color-card-skills) ;
   border: 1px solid var(--color-hover);
-  box-shadow: 0 0 20px var(--color-hover);
   margin: 2%;
   width: 33%;
   flex-wrap: wrap;
 
 
 }
-
-
 
 
 .competence-name{
@@ -244,12 +239,26 @@ nav a:hover {
 /*              PROJECTS
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+.parallax-projet{
+  background-image: url(../pictures/mobile_desktop_computer.jpg) ;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  /* opacity: 40% black; */
+  width: 100%;
+
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
 
 .projets {
   display: flex; 
   flex-direction: column;
-  background: var(--bg-color);   
   align-items: center;
+  position:relative;
+  /* background-color: rgba(56, 136, 240, 0.89); */
 }
 
 
@@ -261,7 +270,6 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--color-hover);
-  box-shadow: 0 0 20px var(--color-hover);
   width: 40%;
 }
 
@@ -364,7 +372,6 @@ nav a:hover {
 
 .contact {
   text-align: center;  
-  box-shadow: 3px 3px 3px 3px var(--color-hover); 
   border: 1px var(--color-hover) outset;
   padding: 1%;
   
