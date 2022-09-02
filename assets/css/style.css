@@ -7,6 +7,7 @@ html{
   --texte-color :  rgba(29, 93, 231, 0.76);
   --font-color :rgb(195, 233, 233);
   --bg-color : rgba(0, 31, 51); 
+  --bg-color-card-skills : rgba(0, 31, 51, 0.664);
 }
 
 
@@ -157,8 +158,32 @@ nav a:hover {
   background: rgba(0, 247, 255, 0.616);
 
 }
+
+.competence_techno-card,
+.competence_framework-card,
+.competence_cms-card{
+  background-color: var(--bg-color-card-skills) ;
+  border: 1px solid var(--color-hover);
+  box-shadow: 0 0 20px var(--color-hover);
+  margin: 2%;
+  width: 33%;
+  flex-wrap: wrap;
+
+
+}
+
+
+
+
+.competence-name{
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--font-color);
+}
+
 .competences_conteneur{
-  /*TODO Effet scroll a faire  */
+  position: relative;
+  top: 5%;
   display: flex;
   justify-content: center;
 }
@@ -166,6 +191,15 @@ nav a:hover {
 .techno-card-display{
   display: flex;
 
+}
+
+.competence-Area-HTML,
+.competence-Area-CSS,
+.competence-Area-JS,
+.competence-Area-PHP,
+.competence-Area-SQL{
+  padding: 2%;
+  width: 40%;
 }
 
 .competence_framework-card{
@@ -177,6 +211,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 5%;
 }
 
 .competence_framework{
@@ -185,6 +220,16 @@ nav a:hover {
 
 }
 
+.competence-Area-SYMFO,
+.competence-Area-LARAVEL{
+  padding: 2%;
+  margin: 2%;
+}
+
+.competence-SYMFO,
+.competence-LARAVEL{
+  margin: 2%;
+}
 
 .competence-WORDPRESS{
   display: flex;
@@ -192,44 +237,16 @@ nav a:hover {
   align-items: center;
 }
 
+.cms-card-display{
+  margin-top: 15%;
+}
+
 .competence-Area-WORDPRESS {
-  width: 20%;
-}
-
-.competence_techno-card,
-.competence_framework-card,
-.competence_cms-card{
-  background-color: var(--bg-color) ;
-  border: 1px solid var(--color-hover);
-  box-shadow: 0 0 20px var(--color-hover);
-  margin: 2%;
-  width: 33%;
-  flex-wrap: wrap;
-
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-
-}
-.competence-Area-HTML,
-.competence-Area-CSS,
-.competence-Area-JS,
-.competence-Area-PHP,
-.competence-Area-SQL{
-  padding: 2%;
-  width: 40%;
-}
-
-.competence-Area-SYMFO,
-.competence-Area-LARAVEL{
+  width: 25%;
   padding: 2%;
 }
 
-.competence-name{
-  font-size: 16px;
-}
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*              PROJECTS
