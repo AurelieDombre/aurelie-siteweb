@@ -17,7 +17,7 @@ header {
 }
 
 .entete {
-  height: 40em;
+  height: 30em;
 }
 
 .parallax-entete{
@@ -40,7 +40,7 @@ header {
   left: 30%;
   padding: 0.5em;
   color: var(--title-color);
-  background-color:rgba(107, 241, 205, 0.582);
+  background-color:rgba(107, 241, 205);
   font-size: 45px;
   font-family: 'Goldman', cursive;
 }
@@ -63,7 +63,6 @@ h3 {
   color: var(--title-color);
   font-family: 'Passion One', cursive, sans-serif;
   font-size: 35px;
-  margin: 10px;
   padding-top: 20px;
   text-transform: capitalize;
   text-align: center;
@@ -96,19 +95,31 @@ li:hover {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .bienvenue{
-  height: 30rem;
+  margin-bottom: 8%;
+  /* background-color:rgba(107, 241, 205); */
+  padding: 2%;
+
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*             COMPETENCES
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.competences{
-  background-repeat: no-repeat;
+.bulle {
+  height: 300px;
+  width: 375px;
+  background: rgba(107, 241, 205);
+  border-radius: 25%;
+  position: relative;
+  cursor:pointer;
 }
-
-.parallax-competences{
-  
+.triangle {
+  width: 0;
+  border-top: 30px solid rgba(107, 241, 205);
+  border-left: 42px solid transparent;
+  border-right: 20px solid transparent;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+}
+.parallax-bienvenue{
+  background-image: url(../pictures/responsive-color.jpg); 
   background-attachment:fixed;
   background-position:center;
   background-repeat:no-repeat;
@@ -120,6 +131,16 @@ li:hover {
   flex-direction: column;
   align-items: center;
 }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*             COMPETENCES
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.competences{
+  background-color: rgb(255, 115, 194);
+}
+
 
 .competences h5{
   text-transform: uppercase;
@@ -217,7 +238,25 @@ li:hover {
   padding: 2%;
 }
 
+.section{
+  height: 10rem;
+  
+}
 
+.parallax-section{
+  background-image: url(../pictures/responsive-color.jpg); 
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+  width: 100%;
+  
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*              PROJECTS
