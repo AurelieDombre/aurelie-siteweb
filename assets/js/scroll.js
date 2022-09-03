@@ -13,7 +13,7 @@ const bubbleDisplay = {
         // on veut lancer un timer au chargment du site pour afficher la bulle au bout de 5 secondes !
         // premier argument : le handler
         // deuxième argument : le nombre de millisecondes à attendre avant d'executer le handler
-        setTimeout(bubbleDisplay.display, 1000);
+        setTimeout(bubbleDisplay.display, 5000);
     },
 
 
@@ -22,7 +22,7 @@ const bubbleDisplay = {
      */
     handleScroll: function () {
         // si window.scrollY dépasse 100 on affiche la bulle
-        if (window.scrollY > 0) {
+        if (window.scrollY > 100) {
             // on affiche la bulle !!!
             bubbleDisplay.display();
 
