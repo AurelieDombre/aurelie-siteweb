@@ -185,12 +185,14 @@ li:hover {
 .competence_cms-card{
   background-color:rgba(96, 87, 215, 0.637);
   /* border: 3px ridge var(--color-hover); */
-  box-shadow: 3px 6px 13px 5px black;
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.432);
   border-radius: 15%;
   margin: 2%;
   width: 33%;
   flex-wrap: wrap;
-  
+  transform: perspective(1000px);
+  transform-style: preserve-3d;
+
 }
 
 
