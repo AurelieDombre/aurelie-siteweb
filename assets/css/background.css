@@ -6,12 +6,10 @@
 }
 
 .background {
-    position: fixed;
+    position: relative;
     width: 100vw;
-    height: 121%;
-    top: 7%;
-    /* left: 0; */
-    overflow: hidden;
+    height: 250%;
+
 }
 
 .background span {

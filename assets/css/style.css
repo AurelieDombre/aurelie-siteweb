@@ -16,8 +16,19 @@ header {
 
 }
 
+.nav-link:active {
+  background-color: rgb(143, 237, 247);
+
+}
+.nav-link:hover{
+  background-color: rgb(143, 237, 247);
+  border-radius: 25%;
+  color: var(--title-color );
+}
+
+
 .entete {
-  height: 30em;
+  height: 40em;
 }
 
 .parallax-entete{
@@ -27,11 +38,6 @@ header {
   background-repeat:no-repeat;
   background-size:cover;
 
-  width: 100%;
-
-  display: flex; 
-  flex-direction: column;
-  align-items: center;
 }
 
 .entete h1{
@@ -75,12 +81,12 @@ h3 {
   
 }
 
-body {
+/* body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 16px;
   color: black;
-}
+} */
 
 nav  a, li{
   color: white;
@@ -111,6 +117,7 @@ li:hover {
   position: relative;
   left: 60%;
   top: 20%;
+  padding: 4%;
   cursor:pointer;
 }
 .triangle {
@@ -141,7 +148,6 @@ li:hover {
 
 .bulle--on {
   display: flex;
-  animation: .3s 0s 1 pop;
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -149,8 +155,8 @@ li:hover {
 
 .avatar{
   position: relative;
-  top: -100%;
-  left: 76%;
+  top: -110%;
+  left: 100%;
 }
 
 
@@ -165,33 +171,33 @@ li:hover {
 
 .competences h5{
   text-transform: uppercase;
-  color: var(  --title-color);
+  color: rgb(255, 232, 139);
   text-align: center;
   position: relative;
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 23px;
+  font-weight: bolder;
   padding: 10px;
-  background: rgb(255, 232, 139);
 
 }
 
 .competence_techno-card,
 .competence_framework-card,
 .competence_cms-card{
-  background-color:  rgba(200, 225, 255, 0.664);
-  border: 1px solid var(--color-hover);
+  background-color:rgba(96, 87, 215, 0.637);
+  /* border: 3px ridge var(--color-hover); */
+  box-shadow: 3px 6px 13px 5px black;
+  border-radius: 15%;
   margin: 2%;
   width: 33%;
   flex-wrap: wrap;
-
-
+  
 }
 
 
 .competence-name{
   font-size: 16px;
   font-weight: bold;
-  color: var(--font-color);
+  color: white;
 }
 
 .competences_conteneur{
@@ -206,6 +212,15 @@ li:hover {
 
 }
 
+.competence_droite{
+  margin-left: 20%;
+}
+.competence_droite,
+.competence_gauche{
+  width: calc(100% /2);
+  
+}
+
 .competence-Area-HTML,
 .competence-Area-CSS,
 .competence-Area-JS,
@@ -215,6 +230,13 @@ li:hover {
   width: 40%;
 }
 
+.competence-CSS .competence-name{
+  margin-left: 8%;
+}
+
+.competence-JS .competence-name{
+  margin-left: -3%;
+}
 .competence_framework-card{
   display: flex;
   flex-direction: column;
@@ -250,6 +272,12 @@ li:hover {
   align-items: center;
 }
 
+.competence-name{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5%;
+
+}
 .cms-card-display{
   margin-top: 15%;
 }
@@ -342,7 +370,7 @@ li:hover {
   overflow: hidden;
   top: 0;
   left: 0;
-  background-color: rgba(202, 227, 255, 0.685);
+  background-color: rgba(255, 232, 139, 0.582);
   -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
   transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
 }
@@ -414,7 +442,7 @@ li:hover {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .contact {
-  background-image: url(../pictures/contact.jpg) ;
+  background-image: url(../pictures/contact_bulle.jpg) ;
   text-align: center;  
   border: 1px var(--color-hover) outset;
   padding: 1%;
@@ -470,7 +498,7 @@ footer {
   text-align: center;
   color: white;
   background-color: var(  --bg-color-card-skills);
-  padding: 1%;
+  padding: 2%;
 }
 
 
