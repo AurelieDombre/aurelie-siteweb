@@ -55,19 +55,44 @@
         width: 40%;
     }
 
+    .competences {
+        height: 115rem;
+    }
+
     .competences_conteneur {
-        position: relative;
-        top: 5%;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        height: 95%;
+        top: 2%;
     }
+    .front h5{
+        margin-top: 0;
+        animation: none;
+        animation-direction:none;
+    }
+
+
+    .competence_cms-card h5{
+        margin-top: 0;
+    }
+
 
     .competence_techno-card,
     .competence_framework-card,
     .competence_cms-card{
-        width: 95%;
+        width: 80%;
+        height: 100%;
+    }
+
+    .techno-card-display {
+        display: flex;
+        margin-top: 5%;
+    }
+
+    .framework-card-display {
+        margin-top: 10%;
     }
 
     .projets__card{
