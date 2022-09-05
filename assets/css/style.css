@@ -499,7 +499,6 @@ li:hover {
 .contact {
   background-image: url(../pictures/contact_bulle.jpg) ;
   text-align: center;  
-  border: 1px var(--color-hover) outset;
   padding: 1%;
   height: 35rem;
   background-attachment:fixed;
