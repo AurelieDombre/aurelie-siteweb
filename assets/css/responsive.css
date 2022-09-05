@@ -1,4 +1,4 @@
-@media screen and (min-width: 200px) , (max-width: 992px) {
+@media screen and (max-width: 992px) {
 
     body{
         margin: 0;
@@ -112,3 +112,4 @@
         padding: 3%;
     }
 }
+
