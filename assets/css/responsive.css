@@ -180,6 +180,8 @@
 
     .techno-card-display {
         margin-top: 0;
+        width: 90%;
+        margin-left: 5%;
     }
 
     .competence-HTML .competence-name{
