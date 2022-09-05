@@ -82,7 +82,7 @@
     .competence_techno-card,
     .competence_framework-card,
     .competence_cms-card{
-        width: 85%;
+        width: 55%;
         height: 100%;
     }
 
@@ -179,7 +179,7 @@
 @media screen and (min-width: 700px) and (max-width: 880px) {
 
     .techno-card-display {
-        margin-top: -2%;
+        margin-top: 0;
     }
 
     .competence-HTML .competence-name{
@@ -214,6 +214,8 @@
     .competence-LARAVEL .competence-name{
         margin-left: 10%;
     }
+
+
 
     .hovereffect a.info {
         margin: 11% 20px 0 0;
