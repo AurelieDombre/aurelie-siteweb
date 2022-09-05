@@ -221,3 +221,19 @@
     }
 
 }
+
+@media screen and (min-width: 200px) and (max-width: 692px){
+    .techno-card-display {
+        display: flex;
+        margin-top: 14%;
+    }
+
+    .competence_techno-card, .competence_framework-card, .competence_cms-card {
+        width: 85%;
+        height: 100%;
+    }
+
+    .cms-card-display {
+        margin-top: 60%;
+    }
+}
