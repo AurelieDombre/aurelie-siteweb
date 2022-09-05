@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 881px) and (max-width: 900px) {
 
     body{
         margin: 0;
@@ -82,7 +82,7 @@
     .competence_techno-card,
     .competence_framework-card,
     .competence_cms-card{
-        width: 55%;
+        width: 50%;
         height: 100%;
     }
 
@@ -122,7 +122,7 @@
 
 
     .framework-card-display {
-        margin-top: 30%;
+        margin-top: 20%;
     }
 
     .competence-SYMFO .competence-name{
@@ -131,6 +131,10 @@
 
     .competence-LARAVEL .competence-name{
         margin-left: 0;
+    }
+
+    .cms-card-display {
+        margin-top: 35%;
     }
 
     .projets__card{
