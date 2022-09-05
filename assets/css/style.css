@@ -156,8 +156,8 @@ li:hover {
 
 .avatar{
   position: relative;
-  top: -98%;
-  left: 82%;
+  top: -110%;
+  left: 100%;
 }
 
 
@@ -559,6 +559,12 @@ li:hover {
   left: 69%;
   top: 50%;
   
+}
+
+.contact-conteneur .avatar{
+  position: absolute;
+  top: 15%;
+  left: 100%;
 }
 
 .contact a{
