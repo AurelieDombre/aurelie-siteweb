@@ -128,7 +128,7 @@
     .competence-SYMFO .competence-name{
         margin-left: -4%;
     }
-      
+
     .competence-LARAVEL .competence-name{
         margin-left: 0;
     }
@@ -213,6 +213,11 @@
     
     .competence-LARAVEL .competence-name{
         margin-left: 10%;
+    }
+
+    .hovereffect a.info {
+        margin: 11% 20px 0 0;
+        padding: 20% 20%;
     }
 
 }
