@@ -82,14 +82,44 @@
     .competence_techno-card,
     .competence_framework-card,
     .competence_cms-card{
-        width: 80%;
+        width: 60%;
         height: 100%;
     }
 
     .techno-card-display {
         display: flex;
-        margin-top: 5%;
+        margin-top: 2%;
     }
+
+    .competence-Area-HTML,
+    .competence-Area-CSS,
+    .competence-Area-JS,
+    .competence-Area-PHP,
+    .competence-Area-SQL{
+        padding: 2%;
+        width: 45%;
+    }
+
+    .competence-HTML .competence-name{
+        margin-left: 10%;
+    }
+    
+    .competence-CSS .competence-name{
+        margin-left: 13%;
+    }
+    
+    .competence-JS .competence-name{
+        margin-left: 1%;
+    }
+    
+    .competence-PHP .competence-name{
+        margin-left: 7%;
+    }
+    
+    .competence-SQL .competence-name{
+        margin-left: 10%;
+    }
+
 
     .framework-card-display {
         margin-top: 10%;

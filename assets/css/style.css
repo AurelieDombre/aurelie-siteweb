@@ -246,8 +246,10 @@ li:hover {
 .competence-name{
   font-size: 16px;
   font-weight: bold;
+  margin-left: 10%;
   color: rgb(255, 115, 194);
 }
+
 
 .competences_conteneur{
   position: relative;
@@ -259,15 +261,13 @@ li:hover {
   
 }
 
-
-
 .techno-card-display{
   display: flex;
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 .competence_droite{
-  margin-left: 20%;
+  margin-left: 10%;
 }
 .competence_droite,
 .competence_gauche{
@@ -281,16 +281,30 @@ li:hover {
 .competence-Area-PHP,
 .competence-Area-SQL{
   padding: 2%;
-  width: 40%;
+  width: 70%;
+}
+
+.competence-HTML .competence-name{
+  margin-left: 20%;
 }
 
 .competence-CSS .competence-name{
-  margin-left: 8%;
+  margin-left: 23%;
 }
 
 .competence-JS .competence-name{
-  margin-left: -3%;
+  margin-left: 12%;
 }
+
+.competence-PHP .competence-name{
+  margin-left: 16%;
+}
+
+.competence-SQL .competence-name{
+  margin-left: 20%;
+}
+
+
 .competence_framework-card{
   display: flex;
   flex-direction: row;
@@ -314,11 +328,21 @@ li:hover {
 .competence-Area-LARAVEL{
   padding: 2%;
   margin: 2%;
+  width: 100%;
 }
 
 .competence-SYMFO,
 .competence-LARAVEL{
   margin: 2%;
+  width: 20%;
+}
+
+.competence-SYMFO .competence-name{
+  margin-left: 10%;
+}
+
+.competence-LARAVEL .competence-name{
+  margin-left: 15%;
 }
 
 .competence-WORDPRESS{
@@ -327,12 +351,10 @@ li:hover {
   align-items: center;
 }
 
-.competence-name{
-  font-size: 16px;
-  font-weight: bold;
-  margin-left: 5%;
-
+.competence-WORDPRESS .competence-name{
+  margin-left: 0%;
 }
+
 .cms-card-display{
   margin-top: 25%;
 }
