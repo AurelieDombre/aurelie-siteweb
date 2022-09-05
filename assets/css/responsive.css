@@ -16,22 +16,17 @@
         height: 30em;
     }
 
-    
     /* Titre  */
     .entete h1{
         font-size: 35px;
         position:static;
         top: 30%;
         width: 100%;
-
     }
-    
-        
+
     h2{
         font-size: 30px;
-
     }
-
 
     .bienvenue{
         transform: translateY(-60px);
@@ -74,7 +69,6 @@
     .competence_cms-card{
         width: 95%;
     }
-
 
     .projets__card{
         width: 90%;
