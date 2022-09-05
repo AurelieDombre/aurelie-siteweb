@@ -13,6 +13,7 @@ html{
 header {
   text-align: center; 
   margin: auto; 
+  color: white;
 
 }
 
@@ -37,6 +38,7 @@ header {
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
+  width: 100%;
 
 }
 
@@ -56,11 +58,10 @@ header {
 
 
 h2{
-  margin: 10px;
   padding: 0.3em;
   color: var(--title-color );
-  font-size: 56px;
-  font-family: 'Goldman', cursive;
+  font-size: 35px;
+  font-family: 'Passion One', cursive, sans-serif;
   font-weight: bold;
 }
 

@@ -1,47 +1,52 @@
-@media screen and (max-width: 600px) {
-    nav {
-        position: absolute;
-        top: 60%;
-        left: 0%;
-        font-size: smaller;
-        font-weight: bold;
-        margin-left: 33%;
-    }
-    header {
-        color: white;
-        text-align: center; 
-        margin: auto; 
-    }
+@media screen and (min-width: 200px) , (max-width: 992px) {
 
-    .entete {
-        background-image: url(../pictures/digital_global_connection_network.jpg);
-        height: 30em;
+    body{
+        margin: 0;
+        padding: 0;
     }
-
-    .entete h1{
+    .corp { 
+        font-size: 20px;
+        
+    }
+    .background{
         display: none;
     }
 
-    .entete h2{
-        position: absolute;
-        top: 190px;
-        left: 0%;
+    .entete {
+        height: 30em;
     }
+
     
     /* Titre  */
     h1{
         font-size: 40px;
     }
     
-    
-    
+        
     h2{
         font-size: 40px;
     }
 
 
     .bienvenu{
-        padding: 2%;
+        transform: translateY(-60px);
+        width: 50%;
+        font-size: 14px;
+        position: absolute;
+        top: 20%;
+        left: calc(100% /2);
+    }
+
+    .parallax-bienvenue{
+        display: flex;
+    }
+
+    .triangle{
+        display: none;
+    }
+
+    .avatar{
+        display: none;
     }
 
     .competences_conteneur {
@@ -51,12 +56,15 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        /* width: 100%; */
     }
 
-    .background {
-        display: none;
+    .competence_techno-card,
+    .competence_framework-card,
+    .competence_cms-card{
+        width: 95%;
     }
+
 
     .projets__card{
         width: 90%;
