@@ -58,35 +58,36 @@ header {
 
 h2{
   padding: 0.3em;
+  text-align: center;
   color: var(--title-color );
   font-size: 35px;
   font-family: 'Passion One', cursive, sans-serif;
   font-weight: bold;
 }
 
-
 h3 {
   color: var(--title-color);
-  font-family: 'Passion One', cursive, sans-serif;
-  font-size: 35px;
+  font-family: 'Passion One', cursive, sans-serif;;
   padding-top: 20px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
+}
+
+.competences h3 {
+
+  font-size: 60px;
+}
+
+.projets h3 {
+  font-size: 60px;
 }
 
 
 .corp { 
-  color: var(--font-color);
   font-size: 25px;
   
 }
 
-/* body {
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  font-size: 16px;
-  color: black;
-} */
 
 nav  a, li{
   color: white;
@@ -253,7 +254,7 @@ li:hover {
 
 .competences_conteneur{
   position: relative;
-  top: -2%;
+  top: 3%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -407,6 +408,7 @@ li:hover {
   align-items: center;
   position:relative;
   background: rgba(96, 87, 215, 0.582);
+  height: 85rem;
 }
 
 
