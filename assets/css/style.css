@@ -172,18 +172,22 @@ li:hover {
 
 .front, .back {
   background-color:rgba(96, 87, 215, 0.637);
-  /* position: absolute; */
+  position: absolute;
   width: 100%;
   height: 100%;
   border: #fff solid;
   border-radius: 15%;
   padding: 3%;
+  backface-visibility: hidden;
 }
 
 .front{
   text-align: center;
 }
 
+.back{
+  transform: rotateY(180deg);
+}
 
 .front h5{
   text-transform: uppercase;
@@ -192,7 +196,6 @@ li:hover {
   font-weight: bolder;
   padding: 10px;
   margin-top: 50%;
-
   writing-mode: vertical-rl;
   animation: slide 6s linear infinite /*or*//*reverse*/;
   animation-direction: alternate;
@@ -202,14 +205,35 @@ li:hover {
   to{transform: translatey(-50%); }
 }
 
+.competence_cms-card .front h5{
+  writing-mode: vertical-rl;
+  animation: slide 6s linear infinite /*or*//*reverse*/;
+  animation-direction: alternate;
+}@keyframes slide  {
+  from{transform: translatey(10%);}
+  to{transform: translatey(-50%); }
+}
 
+.competence_cms-card:hover  {
+  transform: rotateY(180deg);
+  perspective: 900px;
 
+}
+
+.competence_techno-card:hover {
+  transform: rotateY(180deg);
+  perspective: 900px;
+}
+.competence_framework-card:hover {
+  transform: rotateY(180deg);
+  perspective: 900px;
+}
 
 
 .competence_techno-card,
 .competence_framework-card,
 .competence_cms-card{
-  
+  position: relative;
   box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.432);
   border-radius: 15%;
   margin: 2%;
@@ -217,7 +241,7 @@ li:hover {
   flex-wrap: wrap;
   transform: perspective(1000px);
   transform-style: preserve-3d;
-
+  transition: 2s ease-in-out;
 }
 
 
@@ -234,6 +258,7 @@ li:hover {
   flex-direction: row;
   justify-content: center;
   height: 70%;
+  
 }
 
 
