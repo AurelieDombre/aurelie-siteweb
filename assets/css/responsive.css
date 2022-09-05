@@ -1,4 +1,4 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
 
     body{
         margin: 0;
@@ -97,7 +97,7 @@
     .competence-Area-PHP,
     .competence-Area-SQL{
         padding: 2%;
-        width: 45%;
+        width: 60%;
     }
 
     .competence-HTML .competence-name{
@@ -122,7 +122,15 @@
 
 
     .framework-card-display {
-        margin-top: 10%;
+        margin-top: 30%;
+    }
+
+    .competence-SYMFO .competence-name{
+        margin-left: -4%;
+    }
+      
+    .competence-LARAVEL .competence-name{
+        margin-left: 0;
     }
 
     .projets__card{
@@ -167,3 +175,44 @@
     }
 }
 
+
+@media screen and (min-width: 700px) and (max-width: 880px) {
+
+    .techno-card-display {
+        margin-top: -2%;
+    }
+
+    .competence-HTML .competence-name{
+        margin-left: 17%;
+    }
+
+    .competence-CSS .competence-name{
+        margin-left: 21%;
+    }
+
+    .competence-JS .competence-name{
+        margin-left: 10%;
+    }
+
+    .competence-PHP .competence-name{
+        margin-left: 14%;
+    }
+
+    .competence-SQL .competence-name{
+        margin-left: 17%;
+    }
+
+
+    .framework-card-display {
+        margin-top: 10%;
+    }
+
+    .competence-SYMFO .competence-name{
+        margin-left: 10%;
+    }
+    
+    .competence-LARAVEL .competence-name{
+        margin-left: 10%;
+    }
+
+}
