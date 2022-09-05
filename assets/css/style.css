@@ -105,7 +105,7 @@ li:hover {
   margin-bottom: 8%;
   /* background-color:rgba(107, 241, 205); */
   padding: 2%;
-  
+
 
 }
 
@@ -119,6 +119,8 @@ li:hover {
   left: 60%;
   top: 20%;
   padding: 4%;
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.432);
+
 }
 
 .triangle {
@@ -137,14 +139,12 @@ li:hover {
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
-
   width: 100%;
-
   display: flex; 
   flex-direction: column;
   align-items: center;
-
   display: none;
+
 }
 
 .bulle--on {
@@ -152,6 +152,7 @@ li:hover {
   position: relative;
   flex-direction: column;
   align-items: center;
+
 }
 
 .avatar{
