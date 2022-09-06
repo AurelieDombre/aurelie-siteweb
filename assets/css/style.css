@@ -1,3 +1,8 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
 /* Couleur */
 html{
   --text-font-family: 'Goldman', cursive, sans-serif;
@@ -8,6 +13,7 @@ html{
   --bg-color :rgb(202, 227, 255); 
   --bg-color-card-skills : rgb(254, 137, 146);
 }
+
 
 
 header {
@@ -26,6 +32,16 @@ header {
   color: var(--title-color );
 }
 
+.corp{
+  display: flex;
+  flex-direction: column;
+  
+  min-height: 100vh;
+}
+
+.corp .conteneur {
+  flex: 1;
+}
 
 .entete {
   height: 40em;
@@ -524,7 +540,7 @@ li:hover {
   background-image: url(../pictures/contact_bulle.jpg) ;
   text-align: center;  
   padding: 1%;
-  height: 35rem;
+  height: 50rem;
   background-attachment:fixed;
   background-position:center;
   background-repeat:no-repeat;
@@ -578,9 +594,12 @@ b{
 
 .container_social{
   position: relative;
-  top: -33%;
-  left: -40%;
-  transform: rotate3d(1, 1, 1, 45deg);
+  top: 50%;
+  left: -27%;
+}
+
+.social_logo{
+  width: 4%;
 }
 
 footer {
