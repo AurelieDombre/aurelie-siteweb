@@ -576,6 +576,13 @@ b{
   color: var(--title-color);
 }
 
+.container_social{
+  position: relative;
+  top: -33%;
+  left: -40%;
+  transform: rotate3d(1, 1, 1, 45deg);
+}
+
 footer {
   text-align: center;
   color: white;
