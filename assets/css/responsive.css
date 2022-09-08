@@ -179,7 +179,7 @@
     .container_social{
         position: relative;
         top: 57%;
-        left: -27%;
+        left: -30%;
     }
 
     .social_logo{
@@ -254,5 +254,11 @@
 
     .cms-card-display {
         margin-top: 60%;
+    }
+
+    .container_social {
+        position: relative;
+        top: 57%;
+        left: -30%;
     }
 }
