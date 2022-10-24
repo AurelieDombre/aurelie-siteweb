@@ -187,6 +187,17 @@ li:hover {
   height: 60rem;
 }
 
+.competences_conteneur{
+  /* Position des blocks en ligne */
+  position: relative;
+  top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 80%;
+  
+}
+
 .front, .back {
   background-color: white;
   position: absolute;
@@ -269,15 +280,7 @@ li:hover {
 }
 
 
-.competences_conteneur{
-  position: relative;
-  top: 3%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 80%;
-  
-}
+
 
 .techno-card-display{
   display: flex;
