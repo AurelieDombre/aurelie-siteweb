@@ -1,261 +1,168 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Aurélie Dombre | Portfolio</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Passion+One:wght@700&display=swap"
-        rel="stylesheet">
-
-    <!-- css -->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/background.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
-
-    <script defer src="assets/js/scroll.js"></script>
+    <title>Portfolio | Aurélie Dombre</title>
 </head>
-
 <body>
-
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark " style="background-color: #6057d793;" >
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Aurélie Siteweb</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item me-3">
-                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link" aria-current="page" href="#competences">Compétences</a>
-                    </li>
-                    <li class="nav-item me-3">
-                            <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Aurélie Dombre</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#technical-skills">Compétences techniques</a></li>
+                <li><a href="#skills">Compétences fonctionnelles</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Bouton hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
-    <header>
-        <div class="parallax-entete">
-            <div class="entete">
-                <h1>Développeuse Web</h1>
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="fade-in">Développeuse Web</h1>
+                <p class="subtitle fade-in">Passionnée par la création d'applications web innovantes</p>
+                <p class="fade-in">Spécialisée en développement web avec Symfony. Je crée des applications métier sur mesure pour l'Université Aix-Marseille et développe des sites web modernes et performants.</p>
+                <a href="#projects" class="cta-button fade-in">Découvrir mes projets</a>
+            </div>
+            <div class="hero-visual">
+                <div class="code-animation floating">
+                    <div class="code-line">&lt;?php</div>
+                    <div class="code-line">class Developer {</div>
+                    <div class="code-line">  public $passion = true;</div>
+                    <div class="code-line">}</div>
+                </div>
             </div>
         </div>
-    </header>
-    <div class="corp">
+    </section>
 
-        <div class="conteneur">
-            <div class="parallax-bienvenue">
-                <section class="bienvenue">  
-                    <div class=" bulle ">
-                        <h2>BIENVENUE DANS MON PORTFOLIO</h2>
-                        <p> J'ai le plaisir de vous présenter dans ce portfolio les projets que j'ai réalisé</p>
-                        <img class="avatar" src="assets/pictures/face_co.png" alt="avatar Aurélie">
-                    </div>              
-                    <div class="triangle"></div>
-                </section>
+    <section id="technical-skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Compétences techniques</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🚀</div>
+                    <h3>Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Symfony</span>
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">Expo</span>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">💻</div>
+                    <h3>Langages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Base de données</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                
             </div>
-            <section id="competences" class="competences">
-                
-                    <h3>compétences</h3>
-                    <div class="competences_conteneur ">
-                        <div class="competence_techno-card">
-                            <div class="front">
-                                <h5>Technologies</h5>
-                            </div>
-                            <div class="back">
-                                <div class="techno-card-display ">
-                                    <div class="competence_droite">
-                                        <div class="competence-HTML">
-                                            <img class="competence-Area-HTML " src="assets/pictures/HTML5.png"
-                                                alt="logo html 5">
-                                            <p class="competence-name ">HTML5</p>
-                                        </div>
-                                        <div class="competence-CSS">
-                                            <img class="competence-Area-CSS " src="assets/pictures/CSS3.png" alt="logo CSS 3">
-                                            <p class="competence-name ">CSS3</p>
-
-                                        </div>
-                                        <div class="competence-JS">
-                                            <img class="competence-Area-JS " src="assets/pictures/JS.png"
-                                                alt="logo JAVASCRIPT">
-                                            <p class="competence-name ">JAVASCRIPT</p>
-                                        </div>
-                                    </div>
-                                    <div class="competence_gauche">
-                                        <div class="competence-PHP">
-                                            <img class="competence-Area-PHP " src="assets/pictures/PHP.png" alt="logo php">
-                                            <p class="competence-name ">PHP/POO</p>
-                                        </div>
-                                        <div class="competence-SQL">
-                                            <img class="competence-Area-SQL " src="assets/pictures/SQL.png" alt="logo mysql">
-                                            <p class="competence-name ">MySQL</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="competence_framework-card">
-                            <div class="front">
-                                <h5>Framework</h5>
-                            </div>
-                            <div class="back">
-                                <div class="framework-card-display">
-                                    <div class="competence-SYMFO">
-                                        <img class="competence-Area-SYMFO " src="assets/pictures/SYMFONY.png"
-                                            alt="logo symfony">
-                                        <p class="competence-name ">SYMFONY</p>
-                                    </div>
-                                    <div class="competence-LARAVEL">
-                                        <img class="competence-Area-LARAVEL " src="assets/pictures/LARAVEL.png"
-                                            alt="logo LARAVEL by ICON MAFIA">
-                                        <p class="competence-name ">LARAVEL</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="competence_cms-card">
-                            <div class="front">
-                                <h5>CMS</h5>
-                            </div>
-                            <div class="back">
-                                <div class="cms-card-display">
-                                    <div class="competence-WORDPRESS">
-                                        <img class="competence-Area-WORDPRESS " src="assets/pictures/WORDPRESS.png"
-                                            alt="logo wordpress by Jagathish Saravanan">
-                                        <p class="competence-name ">WORDPRESS</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-            </section>
-            
-                <div class="parallax-section">
-                    <div class="section">
-                        <div class="background">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-            
-                
-            <section class="projets">
-
-                <div class="parallax-projet">
-                    
-                    <h3>PROJETS</h3>
-                    <div class="projets__card">
-                        <div class="hovereffect">
-                            <img class="projets__card--img img-responsive" src="assets/pictures/qualiextra.jpg"
-                                alt="Image de création WEB" href="#">
-                            <div class="overlay">
-                                <h5>Qualiextra, expériences épicuriennes</h5>
-                                <a class="info" target="_blank" href="https://github.com/AurelieDombre/Qualiextra"> Voir</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="projets__card">
-                        <div class="hovereffect">
-                            <img class="projets__card--img img-responsive" src="assets/pictures/canis-gluck.jpg"
-                                alt="Image languages Web" href="#">
-                            <div class="overlay">
-                                <h5>Canis Glück</h5>
-                                <a class="info" target="_blank" href="https://www.canis-gluck.fr/">
-                                    Voir </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="projets__card">
-                        <div class="hovereffect">
-                            <img class="projets__card--img img-responsive" src="assets/pictures/cv.jpg"
-                                alt="Image languages Web" href="#">
-                            <div class="overlay">
-                                <h5>Mon curriculum vitae</h5>
-                                <a class="info" target="_blank" href="https://aureliedombre.github.io/cv-developpeuse-web">
-                                    Voir </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-
-
-            <section id="contact" class="contact" title="contact">
-                    <div class="contact-conteneur">
-                        <div class=" bulle ">
-                            <h2>CONTACT</h2>
-                            <p> 
-                                Vous avez une idée de projet que vous souhaitez réaliser ? <br>
-                                Vous voulez créer un projet et vous ne savez pas par où commencer ? <br> 
-                                Pour plus d'information, je suis disponible par e-mail à l'adresse suivante : 
-                                <a href="mailto:au.dombre@gmail.com"> <b>au.dombre@gmail.com</b> </a> <br>
-                                ou par téléphone au : <a href="tel:+330786804399"> <b>07.86.80.43.99</b> </a> 
-                            </p>
-                            <img class="avatar" src="assets/pictures/face_co.png" alt="avatar Aurélie">
-                        </div>
-                        <div class="triangle"></div>
-                    </div>
-                    <div  class="container_social">
-                        <a href="https://github.com/AurelieDombre" target="_blank"> <img
-                            class="social_logo github " src="assets/pictures/Gittub.png"
-                            alt="Logo Github">
-                        </a>
-                        <a href="https://www.linkedin.com/in/aurelie-dombre/" target="_blank"> <img
-                            class="social_logo linkedin " src="assets/pictures/Linkedin.png"
-                            alt="Logo Linkedin">
-                        </a>
-                        
-                    </div>
-                </section>
         </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Compétences fonctionnelles</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🎯</div>
+                    <h3>Compétences</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Développement full-stack d'applications métier</span>
+                        <span class="skill-tag">Sites web vitrine</span>
+                        <span class="skill-tag">Travail en équie (Méthode agile)</span>
+                        <span class="skill-tag">Rédiger et mettre à niveau les documentations techniques et fonctionnelles</span>
+                        <span class="skill-tag">Assurer la maintenance évolutive des développements réalisés</span>
+                        <span class="skill-tag">Modéliser, concevoir et/ou paramétrer tout ou partie de la solution logicielle</span>
+                        <span class="skill-tag">Assurer une assistance fonctionnelle et/ou technique aux exploitants et aux utilisateurs</span>
+                        <span class="skill-tag">Concevoir les actions de formation techniques et fonctionnelles</span>
+                        <span class="skill-tag">Assurer une veille technologique en relation avec le domaine d’application et les experts du domaine.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="/assets/images/logo color du Domaine des Ases.png" alt="Logo Domaine des Ases" class="project-logo">
+                    </div>
+                    <div class="project-content">
+                        <h3>Domaine des Ases</h3>
+                        <p>Site web pour un élevage de Bergers Allemands type ancien (HTML5/CSS)</p>
+                        <a href="https://domaine-des-ases.com/" target="_blank" class="project-link">Voir le site <img src="/assets/images/arrow-up-right-from-square-solid.png" alt="Lien externe" class="project-link-blank"> </a>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="/assets/images/canisgluck-logo.png" alt="Logo Canis Glück" class="project-logo">
+                    </div>
+                    <div class="project-content">
+                        <h3>Canis Glück</h3>
+                        <p>Site web dédié à un élevage de Bergers Allemands (HTML5/CSS)</p>
+                        <a href="https://www.canis-gluck.fr/" target="_blank" class="project-link">Voir le site <img src="/assets/images/arrow-up-right-from-square-solid.png" alt="Lien externe" class="project-link-blank"> </a>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="/assets/images/logo_huet_informatique.png" alt="Logo Huet Informatique" class="project-logo">
+                    </div>
+                    <div class="project-content">
+                        <h3>Huet Informatique</h3>
+                        <p>Site vitrine pour une entreprise de services informatiques avec prestation de service et vente (HTML5/CSS/JS)</p>
+                        <a href="https://www.huet-informatique.com/" target="_blank" class="project-link">Voir le site <img src="/assets/images/arrow-up-right-from-square-solid.png" alt="Lien externe" class="project-link-blank"> </a>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image project-private">
+                        <img src="/assets/images/logo_amu.png" alt="Logo Université Aix-Marseille" class="project-logo">
+                    </div>
+                    <div class="project-content">
+                        <h3>Applications Métier - Université</h3>
+                        <p>Développement d'applications métiers sur mesure pour l'Université Aix-Marseille avec Symfony et bases de données PostgreSql / MySql. (BOOTSTRAP/SYMFONY/JS/DOCKER)</p>
+                        <span class="project-link">Projets confidentiels</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Travaillons Ensemble</h2>
+            <div class="contact-content">
+                <p>Vous avez un projet en tête ? N'hésitez pas à me contacter pour discuter de vos besoins en développement web.</p>
+                <p>Vous pouvez également me joindre sur LinkedIn pour échanger sur vos projets ou pour discuter de nouvelles opportunités professionnelles. Vous pouvez télécharger mon cv en cliquant ici : <a class="project-link" href="/assets/documents/CV_Aurelie_Dombre.pdf" target="_blank">Télécharger le CV</a></p>
+                <a href="mailto:au.dombre@gmail.com" class="contact-button">Me contacter</a>
+            </div>
+        </div>
+    </section>
+    <script src="/assets/js/app.js"></script>
 </body>
-
-<!-- Pied de page -->
-<footer>
-    <span>2022 @Aurélie Dombre</span>
-</footer>
-
 </html>
